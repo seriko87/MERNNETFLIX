@@ -1,0 +1,118 @@
+.listItem {
+  width: 290px;
+  height: 165px;
+  background-color: var(--main-color);
+  overflow: hidden;
+  margin-right: 5px;
+  cursor: pointer;
+  color: white;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  video {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  iframe {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:hover {
+    width: 370px;
+    height: 360px;
+    position: absolute;
+    top: -130px;
+    z-index: 999;
+    box-shadow: 0px 1px 10px 2px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0px 1px 10px 2px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: 0px 1px 10px 2px rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+
+    img {
+      height: 210px;
+    }
+
+    .itemInfo {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      padding: 15px;
+
+      .icons {
+        display: flex;
+        margin-bottom: 10px;
+
+        .icon-play {
+          border: 2px solid rgb(250, 250, 250);
+          font-size: 24px;
+          border-radius: 50%;
+          margin-right: 10px;
+          padding: 5px;
+          background-color: white;
+          color: black;
+
+          &:hover {
+            border-color: rgba(255, 255, 255, 0.808);
+          }
+        }
+
+        .icon {
+          border: 2px solid rgba(250, 250, 250, 0.589);
+          padding: 5px;
+          border-radius: 50%;
+          margin-right: 10px;
+          font-size: 24px;
+
+          &:hover {
+            border-color: white;
+          }
+        }
+      }
+      .itemInfoTop {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(240, 240, 240);
+
+        .matchStatus {
+          color: rgb(6, 211, 6);
+          font-size: 18px;
+        }
+        .limit {
+          border: 1px solid gray;
+          padding: 1px 3px;
+          margin: 0 10px;
+          font-size: 14px;
+        }
+        .limit-hd {
+          border: 1px solid gray;
+          border-radius: 3px;
+          padding: 1px 3px;
+          margin: 0 10px;
+          font-size: 12px;
+        }
+      }
+
+      .desc {
+        .dot {
+          margin: 0px 8px;
+          font-size: 8px;
+          color: rgba(128, 128, 128, 0.788);
+        }
+      }
+    }
+  }
+}
